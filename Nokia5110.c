@@ -1658,7 +1658,7 @@ void Nokia5110_Runner(unsigned char *frames[], int Wframe, int Hframe, int Xpos,
                 sprintf(str, "X:%0.2d\r\n", x); // convert result to string
             }
         }
-
+				
         fillBuffer(bck);  //drawBitmap(0, 0, bck, SCREENW, SCREENW*SCREENH/8);
         drawBitmap(x, Ypos, frames[i], Wframe, len);
         text(69, 43,  (unsigned char *)str, 0);

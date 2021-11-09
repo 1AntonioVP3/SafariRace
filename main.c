@@ -66,3 +66,5 @@ void InicializaPtoSerial(void){
   // Activamos funciones digitales en PA0 y PA1
   GPIO_PORTA_DEN_R |= 0x03;
 }
+int main(){
+}
