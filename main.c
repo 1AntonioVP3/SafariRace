@@ -41,7 +41,7 @@ void setupADC(void){
 /***** ENTRADAS: Ninguna *****/
 /***** SALIDA: Ninguna *****/
 /****************************************************************************************/
-void InicializaPtoSerial(void){
+void config_UART(void){
   // Activamos el reloj para el UART0
   SYSCTL_RCGCUART_R |= SYSCTL_RCGCUART_R0;
   while(!(SYSCTL_PRUART_R & SYSCTL_PRUART_R0));
