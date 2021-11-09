@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include "tm4c123gh6pm.h"
 
-void configPORTUART (void){
+void config_UART (void){
 	//Iniciando reloj del UART0
 	SYSCTL_RCGC1_R|=SYSCTL_RCGC1_UART0;
 	while((SYSCTL_PRUART_R & SYSCTL_PRUART_R0)==0x00);
