@@ -4,6 +4,7 @@ ARM Linker, 5.03 [Build 76] [MDK-ARM Lite]
 
 Section Cross References
 
+    main.o(i.main) refers to nokia5110.o(i.Nokia5110_Init) for Nokia5110_Init
     main.o(i.main) refers to pe.o(i.PE_Inicializa) for PE_Inicializa
     main.o(i.main) refers to TivaES.obj(.text) for TivaES_Inicializa
     main.o(i.main) refers to adc.o(i.config_ADC) for config_ADC
@@ -439,7 +440,6 @@ Removing Unused input sections from the image.
     Removing nokia5110.o(i.Nokia5110_ClearBuffer), (24 bytes).
     Removing nokia5110.o(i.Nokia5110_DisplayBuffer), (16 bytes).
     Removing nokia5110.o(i.Nokia5110_DrawFullImage), (34 bytes).
-    Removing nokia5110.o(i.Nokia5110_Init), (364 bytes).
     Removing nokia5110.o(i.Nokia5110_OutChar), (64 bytes).
     Removing nokia5110.o(i.Nokia5110_OutChar2), (88 bytes).
     Removing nokia5110.o(i.Nokia5110_OutString), (22 bytes).
@@ -491,7 +491,6 @@ Removing Unused input sections from the image.
     Removing nokia5110.o(i.ellipsePlotPoints), (44 bytes).
     Removing nokia5110.o(i.fillBuffer), (28 bytes).
     Removing nokia5110.o(i.invertPixel), (104 bytes).
-    Removing nokia5110.o(i.lcdwrite), (76 bytes).
     Removing nokia5110.o(i.readADC), (52 bytes).
     Removing nokia5110.o(i.readPixel), (80 bytes).
     Removing nokia5110.o(i.setContrast), (40 bytes).
@@ -526,7 +525,7 @@ Removing Unused input sections from the image.
     Removing dfixul.o(.text), (48 bytes).
     Removing cdrcmple.o(.text), (40 bytes).
 
-92 unused section(s) (total 16915 bytes) removed from the image.
+90 unused section(s) (total 16475 bytes) removed from the image.
 
 ==============================================================================
 
@@ -537,34 +536,34 @@ Image Symbol Table
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
     RESET                                    0x00000000   Section      644  startup.o(RESET)
-    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/stdio/fputc.c           0x00000000   Number         0  fputc.o ABSOLUTE
@@ -575,8 +574,8 @@ Image Symbol Table
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemip.o ABSOLUTE
     ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
-    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
@@ -650,14 +649,17 @@ Image Symbol Table
     $C$CON14                                 0x0000062c   Data           0  TivaES.obj(.text)
     $C$CON15                                 0x00000630   Data           0  TivaES.obj(.text)
     .text                                    0x00000634   Section       36  init.o(.text)
-    i.PE_Inicializa                          0x00000658   Section        0  pe.o(i.PE_Inicializa)
-    i.__scatterload_copy                     0x000006b8   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x000006c6   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x000006c8   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i.config_ADC                             0x000006d8   Section        0  adc.o(i.config_ADC)
-    i.config_SYSTICK                         0x000007b0   Section        0  systick.o(i.config_SYSTICK)
-    i.config_UART                            0x000007ec   Section        0  uart.o(i.config_UART)
-    i.main                                   0x00000944   Section        0  main.o(i.main)
+    i.Nokia5110_Init                         0x00000658   Section        0  nokia5110.o(i.Nokia5110_Init)
+    i.PE_Inicializa                          0x000007c4   Section        0  pe.o(i.PE_Inicializa)
+    i.__scatterload_copy                     0x00000824   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00000832   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00000834   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.config_ADC                             0x00000844   Section        0  adc.o(i.config_ADC)
+    i.config_SYSTICK                         0x0000091c   Section        0  systick.o(i.config_SYSTICK)
+    i.config_UART                            0x00000958   Section        0  uart.o(i.config_UART)
+    i.lcdwrite                               0x00000ab0   Section        0  nokia5110.o(i.lcdwrite)
+    lcdwrite                                 0x00000ab1   Thumb Code    66  nokia5110.o(i.lcdwrite)
+    i.main                                   0x00000afc   Section        0  main.o(i.main)
     STACK                                    0x20000000   Section     1024  startup.o(STACK)
     StackMem                                 0x20000000   Data           0  startup.o(STACK)
 
@@ -859,16 +861,17 @@ Image Symbol Table
     TivaES_SolicitaNumero                    0x000004f9   Thumb Code   256  TivaES.obj(.text)
     __scatterload                            0x00000635   Thumb Code    28  init.o(.text)
     __scatterload_rt2                        0x00000635   Thumb Code     0  init.o(.text)
-    PE_Inicializa                            0x00000659   Thumb Code    78  pe.o(i.PE_Inicializa)
-    __scatterload_copy                       0x000006b9   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x000006c7   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x000006c9   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    config_ADC                               0x000006d9   Thumb Code   186  adc.o(i.config_ADC)
-    config_SYSTICK                           0x000007b1   Thumb Code    58  systick.o(i.config_SYSTICK)
-    config_UART                              0x000007ed   Thumb Code   314  uart.o(i.config_UART)
-    main                                     0x00000945   Thumb Code    26  main.o(i.main)
-    Region$$Table$$Base                      0x00000960   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00000970   Number         0  anon$$obj.o(Region$$Table)
+    Nokia5110_Init                           0x00000659   Thumb Code   316  nokia5110.o(i.Nokia5110_Init)
+    PE_Inicializa                            0x000007c5   Thumb Code    78  pe.o(i.PE_Inicializa)
+    __scatterload_copy                       0x00000825   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00000833   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00000835   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    config_ADC                               0x00000845   Thumb Code   186  adc.o(i.config_ADC)
+    config_SYSTICK                           0x0000091d   Thumb Code    58  systick.o(i.config_SYSTICK)
+    config_UART                              0x00000959   Thumb Code   314  uart.o(i.config_UART)
+    main                                     0x00000afd   Thumb Code    30  main.o(i.main)
+    Region$$Table$$Base                      0x00000b1c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000b2c   Number         0  anon$$obj.o(Region$$Table)
     __initial_sp                             0x20000400   Data           0  startup.o(STACK)
 
 
@@ -879,9 +882,9 @@ Memory Map of the image
 
   Image Entry point : 0x0000026d
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00000970, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00000b2c, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Base: 0x00000000, Size: 0x00000970, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x00000b2c, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -897,18 +900,20 @@ Memory Map of the image
     0x00000294   0x00000004   Code   RO          881    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x00000298   0x0000039c   Code   RO          456    .text               TivaES.obj
     0x00000634   0x00000024   Code   RO          916    .text               mc_w.l(init.o)
-    0x00000658   0x00000060   Code   RO          532    i.PE_Inicializa     pe.o
-    0x000006b8   0x0000000e   Code   RO          922    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x000006c6   0x00000002   Code   RO          923    i.__scatterload_null  mc_w.l(handlers.o)
-    0x000006c8   0x0000000e   Code   RO          924    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x000006d6   0x00000002   PAD
-    0x000006d8   0x000000d8   Code   RO          565    i.config_ADC        adc.o
-    0x000007b0   0x0000003a   Code   RO          578    i.config_SYSTICK    systick.o
-    0x000007ea   0x00000002   PAD
-    0x000007ec   0x00000158   Code   RO          497    i.config_UART       uart.o
-    0x00000944   0x0000001a   Code   RO            1    i.main              main.o
-    0x0000095e   0x00000002   PAD
-    0x00000960   0x00000010   Data   RO          920    Region$$Table       anon$$obj.o
+    0x00000658   0x0000016c   Code   RO           52    i.Nokia5110_Init    nokia5110.o
+    0x000007c4   0x00000060   Code   RO          532    i.PE_Inicializa     pe.o
+    0x00000824   0x0000000e   Code   RO          922    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00000832   0x00000002   Code   RO          923    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00000834   0x0000000e   Code   RO          924    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00000842   0x00000002   PAD
+    0x00000844   0x000000d8   Code   RO          565    i.config_ADC        adc.o
+    0x0000091c   0x0000003a   Code   RO          578    i.config_SYSTICK    systick.o
+    0x00000956   0x00000002   PAD
+    0x00000958   0x00000158   Code   RO          497    i.config_UART       uart.o
+    0x00000ab0   0x0000004c   Code   RO          104    i.lcdwrite          nokia5110.o
+    0x00000afc   0x0000001e   Code   RO            1    i.main              main.o
+    0x00000b1a   0x00000002   PAD
+    0x00000b1c   0x00000010   Data   RO          920    Region$$Table       anon$$obj.o
 
 
     Execution Region ER_RW (Base: 0x20000000, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
@@ -932,14 +937,15 @@ Image component sizes
 
        924         60          0          0          0      11522   TivaES.obj
        216         30          0          0          0        397   adc.o
-        26          0          0          0          0       1831   main.o
+        30          0          0          0          0       1835   main.o
+       440         58          0          0          0       2125   nokia5110.o
         96         18          0          0          0        360   pe.o
        644        620          0          0       1024        688   startup.o
         58          0          0          0          0        361   systick.o
        344         30          0          0          0        442   uart.o
 
     ----------------------------------------------------------------------
-      2312        758         16          0       1024      15601   Object Totals
+      2756        816         16          0       1024      17730   Object Totals
          0          0         16          0          0          0   (incl. Generated)
          4          0          0          0          0          0   (incl. Padding)
 
@@ -978,15 +984,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      2400        774         16          0       1024      15461   Grand Totals
-      2400        774         16          0       1024      15461   ELF Image Totals
-      2400        774         16          0          0          0   ROM Totals
+      2844        832         16          0       1024      17486   Grand Totals
+      2844        832         16          0       1024      17486   ELF Image Totals
+      2844        832         16          0          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 2416 (   2.36kB)
+    Total RO  Size (Code + RO Data)                 2860 (   2.79kB)
     Total RW  Size (RW Data + ZI Data)              1024 (   1.00kB)
-    Total ROM Size (Code + RO Data + RW Data)       2416 (   2.36kB)
+    Total ROM Size (Code + RO Data + RW Data)       2860 (   2.79kB)
 
 ==============================================================================
 

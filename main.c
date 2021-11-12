@@ -10,6 +10,8 @@
 #include "bitmapPhotos.h"
 
 int main(){
+	//Inicialización de periféricos y puertos GPIO:
+	Nokia5110_Init();
 	PE_Inicializa();
 	TivaES_Inicializa();
 	config_ADC();

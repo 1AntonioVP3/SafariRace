@@ -5,7 +5,7 @@
 void config_ADC (void){
 	SYSCTL_RCGCADC_R |= 0x0001;   // 1) activate ADC0
   SYSCTL_RCGCGPIO_R |= 0x10;    // 2) activate clock for Port E
-  while((SYSCTL_PRGPIO_R&0x10) != 0x10){};  // 3) for stabilization
+  while((SYSCTL_PRGPIO_R&0x10) != 0x10){};  // 3 for stabilization
   GPIO_PORTE_DIR_R &= ~0x10;    // 4) make PE4 input
   GPIO_PORTE_AFSEL_R |= 0x08;   // 5) enable alternate function on PE3
   GPIO_PORTE_DEN_R &= ~0x08;    // 6) disable digital I/O on PE3
