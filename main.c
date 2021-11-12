@@ -17,6 +17,7 @@ int main(){
 	config_ADC();
 	config_SYSTICK();
 	config_UART();
+	
 }
 
 //Hola carlote

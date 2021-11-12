@@ -460,6 +460,26 @@
               <FileType>5</FileType>
               <FilePath>.\tm4c123gh6pm.h</FilePath>
             </File>
+            <File>
+              <FileName>UART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UART.c</FilePath>
+            </File>
+            <File>
+              <FileName>PE.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\PE.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>SYSTICK.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SYSTICK.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
