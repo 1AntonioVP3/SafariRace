@@ -193,11 +193,11 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>1</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
 <<<<<<< HEAD
-      <CurrentLine>18</CurrentLine>
+      <CurrentLine>1</CurrentLine>
 =======
       <CurrentLine>20</CurrentLine>
 >>>>>>> 4a30ccc7b4ff331d6c2395c7593dc4ad02457f98
@@ -231,13 +231,8 @@
       <Focus>0</Focus>
       <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-<<<<<<< HEAD
-      <TopLine>43</TopLine>
-      <CurrentLine>50</CurrentLine>
-=======
-      <TopLine>550</TopLine>
+      <TopLine>726</TopLine>
       <CurrentLine>742</CurrentLine>
->>>>>>> 4a30ccc7b4ff331d6c2395c7593dc4ad02457f98
       <bDave2>0</bDave2>
       <PathWithFileName>.\Nokia5110.c</PathWithFileName>
       <FilenameWithoutPath>Nokia5110.c</FilenameWithoutPath>
@@ -380,11 +375,7 @@
       <Focus>0</Focus>
       <ColumnNumber>12</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-<<<<<<< HEAD
-      <TopLine>42</TopLine>
-=======
       <TopLine>4</TopLine>
->>>>>>> 4a30ccc7b4ff331d6c2395c7593dc4ad02457f98
       <CurrentLine>5</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\UART.c</PathWithFileName>
@@ -400,7 +391,7 @@
       <Focus>0</Focus>
       <ColumnNumber>38</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
+      <TopLine>4</TopLine>
       <CurrentLine>35</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\PE.c</PathWithFileName>
@@ -430,17 +421,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-<<<<<<< HEAD
-      <ColumnNumber>18</ColumnNumber>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>21</CurrentLine>
-=======
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
       <CurrentLine>24</CurrentLine>
->>>>>>> 4a30ccc7b4ff331d6c2395c7593dc4ad02457f98
       <bDave2>0</bDave2>
       <PathWithFileName>.\SYSTICK.c</PathWithFileName>
       <FilenameWithoutPath>SYSTICK.c</FilenameWithoutPath>
